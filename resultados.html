@@ -15,10 +15,8 @@
     // Mostrar los resultados guardados en localStorage
     const resultsContainer = document.getElementById("results-container");
 
-    // Recuperar resultados según el nivel (Easy, Hard, Custom)
+    // Recuperar resultados del nivel EASY
     const easyScores = JSON.parse(localStorage.getItem("easyHighScores")) || [];
-    const hardScores = JSON.parse(localStorage.getItem("hardHighScores")) || [];
-    const customScores = JSON.parse(localStorage.getItem("customHighScores")) || [];
 
     // Construir HTML para los puntajes
     let scoreHTML = "";
@@ -31,26 +29,6 @@
       scoreHTML += "</ol>";
     } else {
       scoreHTML += "<h2>🔵 Nivel Fácil (E)</h2><p>No hay puntajes guardados aún.</p>";
-    }
-
-    if (hardScores.length > 0) {
-      scoreHTML += "<h2>🔴 Nivel Difícil (H)</h2><ol>";
-      hardScores.forEach(score => {
-        scoreHTML += `<li>Promedio: ${score.averageTime.toFixed(2)} segundos | Palabras: ${score.wordCount}</li>`;
-      });
-      scoreHTML += "</ol>";
-    } else {
-      scoreHTML += "<h2>🔴 Nivel Difícil (H)</h2><p>No hay puntajes guardados aún.</p>";
-    }
-
-    if (customScores.length > 0) {
-      scoreHTML += "<h2>🟢 Nivel Personalizado (Custom)</h2><ol>";
-      customScores.forEach(score => {
-        scoreHTML += `<li>Promedio: ${score.averageTime.toFixed(2)} segundos | Palabras: ${score.wordCount}</li>`;
-      });
-      scoreHTML += "</ol>";
-    } else {
-      scoreHTML += "<h2>🟢 Nivel Personalizado (Custom)</h2><p>No hay puntajes guardados aún.</p>";
     }
 
     // Mostrar resultados
