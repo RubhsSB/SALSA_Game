@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resultados</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>🏆 Top 10 Puntajes Más Altos</h1>
+  <div id="results-container"></div>
+  <a href="index.html"><button>Volver</button></a>
+
+  <script>
+    // Mostrar los resultados guardados en localStorage
+    const resultsContainer = document.getElementById("results-container");
+
+    // Recuperar resultados según el nivel (Easy, Hard, Custom)
+    const easyScores = JSON.parse(localStorage.getItem("easyHighScores")) || [];
+    const hardScores = JSON.parse(localStorage.getItem("hardHighScores")) || [];
+    const customScores = JSON.parse(localStorage.getItem("customHighScores")) || [];
+
+    // Construir HTML para los puntajes
+    let scoreHTML = "";
+
+    if (easyScores.length > 0) {
+      scoreHTML += "<h2>🔵 Nivel Fácil (E)</h2><ol>";
+      easyScores.forEach(score => {
+        scoreHTML += `<li>Promedio: ${score.averageTime.toFixed(2)} segundos | Palabras: ${score.wordCount}</li>`;
+      });
+      scoreHTML += "</ol>";
+    } else {
+      scoreHTML += "<h2>🔵 Nivel Fácil (E)</h2><p>No hay puntajes guardados aún.</p>";
+    }
+
+    if (hardScores.length > 0) {
+      scoreHTML += "<h2>🔴 Nivel Difícil (H)</h2><ol>";
+      hardScores.forEach(score => {
+        scoreHTML += `<li>Promedio: ${score.averageTime.toFixed(2)} segundos | Palabras: ${score.wordCount}</li>`;
+      });
+      scoreHTML += "</ol>";
+    } else {
+      scoreHTML += "<h2>🔴 Nivel Difícil (H)</h2><p>No hay puntajes guardados aún.</p>";
+    }
+
+    if (customScores.length > 0) {
+      scoreHTML += "<h2>🟢 Nivel Personalizado (Custom)</h2><ol>";
+      customScores.forEach(score => {
+        scoreHTML += `<li>Promedio: ${score.averageTime.toFixed(2)} segundos | Palabras: ${score.wordCount}</li>`;
+      });
+      scoreHTML += "</ol>";
+    } else {
+      scoreHTML += "<h2>🟢 Nivel Personalizado (Custom)</h2><p>No hay puntajes guardados aún.</p>";
+    }
+
+    // Mostrar resultados
+    resultsContainer.innerHTML = scoreHTML;
+  </script>
+</body>
+</html>
