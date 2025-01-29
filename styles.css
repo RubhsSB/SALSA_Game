@@ -1,18 +1,32 @@
 /* Estilos generales */
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif; /* Fuente actualizada */
+  font-family: 'Poppins', sans-serif; /* Fuente nueva */
   margin: 0;
   padding: 0;
-  background-color: #eaeaea; /* Fondo gris claro */
-  color: #003366; /* Texto en azul */
+  background-color: #3a3a3a; /* Fondo gris más oscuro */
+  color: #ffffff; /* Texto blanco */
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   position: relative;
+}
+
+/* Cabecera principal */
+#header {
+  position: absolute;
+  top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+#header h1 {
+  font-size: 48px;
+  color: #ffa500; /* Naranja */
+  margin: 0;
 }
 
 /* Botón R para acceder a resultados */
@@ -26,7 +40,7 @@ body {
 #results-button button {
   font-size: 16px;
   padding: 5px 10px;
-  background-color: #007bff; /* Azul brillante */
+  background-color: #ff0000; /* Rojo */
   color: white;
   border: none;
   border-radius: 5px;
@@ -35,12 +49,13 @@ body {
 }
 
 #results-button button:hover {
-  background-color: #0056b3; /* Azul más oscuro */
+  background-color: #cc0000; /* Rojo más oscuro */
 }
 
 /* Contenedor principal del juego */
 #game {
   text-align: center;
+  margin-top: 100px; /* Separación desde la cabecera */
 }
 
 /* Palabra centrada y grande */
@@ -48,7 +63,7 @@ body {
   font-size: 72px;
   font-weight: bold;
   margin: 20px 0;
-  color: #003366; /* Azul */
+  color: #ffa500; /* Naranja */
 }
 
 /* Contador de palabras */
@@ -71,18 +86,18 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #28a745; /* Verde */
+  background-color: #ffa500; /* Naranja */
   color: white;
   transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #218838; /* Verde más oscuro */
+  background-color: #e59400; /* Naranja más oscuro */
   transform: scale(1.05); /* Efecto de agrandamiento */
 }
 
 button:disabled {
-  background-color: #ccc;
+  background-color: #777; /* Gris para botones deshabilitados */
   cursor: not-allowed;
 }
 
@@ -90,5 +105,5 @@ button:disabled {
 #result {
   font-size: 20px;
   margin: 20px 0;
-  color: #003366; /* Azul */
+  color: #ffffff; /* Texto blanco */
 }
