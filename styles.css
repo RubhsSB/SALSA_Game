@@ -1,11 +1,11 @@
 /* Estilos generales */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  font-family: 'Poppins', sans-serif; /* Fuente nueva */
+  font-family: 'Roboto', sans-serif; /* Fuente moderna */
   margin: 0;
   padding: 0;
-  background-color: #3a3a3a; /* Fondo gris más oscuro */
+  background-color: #2b2b2b; /* Fondo gris oscuro */
   color: #ffffff; /* Texto blanco */
   height: 100vh;
   display: flex;
@@ -16,20 +16,14 @@ body {
 }
 
 /* Cabecera principal */
-#header {
-  position: absolute;
-  top: 10px;
-  text-align: center;
-  width: 100%;
-}
-
 #header h1 {
-  font-size: 48px;
+  font-size: 144px; /* Tres veces más grande */
   color: #ffa500; /* Naranja */
   margin: 0;
+  text-align: center;
 }
 
-/* Botón R para acceder a resultados */
+/* Botón "R" para acceder a resultados */
 #results-button {
   position: absolute;
   top: 10px;
@@ -55,7 +49,6 @@ body {
 /* Contenedor principal del juego */
 #game {
   text-align: center;
-  margin-top: 100px; /* Separación desde la cabecera */
 }
 
 /* Palabra centrada y grande */
@@ -97,7 +90,7 @@ button:hover {
 }
 
 button:disabled {
-  background-color: #777; /* Gris para botones deshabilitados */
+  background-color: #777; /* Gris oscuro para botones deshabilitados */
   cursor: not-allowed;
 }
 
@@ -105,5 +98,5 @@ button:disabled {
 #result {
   font-size: 20px;
   margin: 20px 0;
-  color: #ffffff; /* Texto blanco */
+  color: #ffffff; /* Blanco */
 }
