@@ -17,7 +17,7 @@ body {
 
 /* Cabecera principal */
 #header h1 {
-  font-size: 80px; /* Tres veces más grande */
+  font-size: 50px; /* Tres veces más grande */
   color: #ffa500; /* Naranja */
   margin: 0;
   text-align: center;
