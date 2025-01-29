@@ -1,9 +1,12 @@
 /* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
 body {
-  font-family: Arial, sans-serif;
+  font-family: 'Roboto', sans-serif; /* Nueva fuente */
   margin: 0;
   padding: 0;
-  background-color: #f4f4f4;
+  background-color: #eaeaea; /* Fondo gris claro */
+  color: #003366; /* Texto en azul */
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -23,7 +26,7 @@ body {
 #results-button button {
   font-size: 16px;
   padding: 5px 10px;
-  background-color: #007bff;
+  background-color: #007bff; /* Azul brillante */
   color: white;
   border: none;
   border-radius: 5px;
@@ -32,7 +35,7 @@ body {
 }
 
 #results-button button:hover {
-  background-color: #0056b3;
+  background-color: #0056b3; /* Azul más oscuro */
 }
 
 /* Contenedor principal del juego */
@@ -45,6 +48,7 @@ body {
   font-size: 72px;
   font-weight: bold;
   margin: 20px 0;
+  color: #003366; /* Azul */
 }
 
 /* Contador de palabras */
@@ -67,13 +71,14 @@ button {
   cursor: pointer;
   border: none;
   border-radius: 5px;
-  background-color: #28a745;
+  background-color: #28a745; /* Verde */
   color: white;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 button:hover {
-  background-color: #218838;
+  background-color: #218838; /* Verde más oscuro */
+  transform: scale(1.05); /* Efecto de agrandamiento */
 }
 
 button:disabled {
@@ -85,7 +90,7 @@ button:disabled {
 #result {
   font-size: 20px;
   margin: 20px 0;
-  color: #333;
+  color: #003366; /* Azul */
 }
 
 /* Nivel de dificultad */
@@ -100,8 +105,8 @@ button:disabled {
 #level-selection button {
   font-size: 16px;
   padding: 5px 10px;
-  background-color: #ccc;
-  color: white;
+  background-color: #ccc; /* Gris claro por defecto */
+  color: #003366; /* Azul texto */
   border: none;
   border-radius: 5px;
   cursor: pointer;
@@ -113,9 +118,10 @@ button:disabled {
 }
 
 #level-selection button.active {
-  background-color: #28a745;
+  background-color: #ffa500; /* Naranja al estar seleccionado */
+  color: white; /* Texto en blanco */
 }
 
 #level-selection button.active:hover {
-  background-color: #218838;
+  background-color: #e59400; /* Naranja más oscuro */
 }
