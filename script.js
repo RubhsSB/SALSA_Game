@@ -1,7 +1,6 @@
 // Lista de palabras
 const words = [
-  "CyC (Blablabla)", "CyC (Blablabla)", "CyC (Blablabla)", "CyC (Blablabla)", "CyC (Blablabla)", 
-  "CyC (Blablabla)", "CyC (Blablabla)", "CyC (Blablabla)", "CyC (Blablabla)", "CyC (Blablabla)"
+ "NICO (Led giro atrás en 5)", "Deyfron (Cross + 70`+ Titanic)", "NICO (Led giro en 1 con camb de mano)", "Deyfron (Cross + 70)", "SUZIE Q 1", "SUZIE Q 2", "SUZIE Q 3", "SUZIE Q 4", "TRAVEL 1", "TRAVEL 2", "TRAVEL 3", "MAMBO", "ATRÁS", "LATERAL"
 ];
 
 // Variables
