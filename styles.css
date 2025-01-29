@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 body {
-  font-family: 'Roboto', sans-serif; /* Nueva fuente */
+  font-family: 'Roboto', sans-serif; /* Fuente actualizada */
   margin: 0;
   padding: 0;
   background-color: #eaeaea; /* Fondo gris claro */
@@ -91,37 +91,4 @@ button:disabled {
   font-size: 20px;
   margin: 20px 0;
   color: #003366; /* Azul */
-}
-
-/* Nivel de dificultad */
-#level-selection {
-  position: absolute;
-  top: 10px;
-  right: 10px;
-  display: flex;
-  gap: 10px;
-}
-
-#level-selection button {
-  font-size: 16px;
-  padding: 5px 10px;
-  background-color: #ccc; /* Gris claro por defecto */
-  color: #003366; /* Azul texto */
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-#level-selection button:hover {
-  background-color: #bbb; /* Gris más oscuro al pasar el ratón */
-}
-
-#level-selection button.active {
-  background-color: #ffa500; /* Naranja al estar seleccionado */
-  color: white; /* Texto en blanco */
-}
-
-#level-selection button.active:hover {
-  background-color: #e59400; /* Naranja más oscuro */
 }
