@@ -1,7 +1,7 @@
 // Lista de palabras
 const words = [
  "NICO (Led giro atrás en 5)", "Deyfron (Cross + 70`+ Titanic)", "NICO (Led giro en 1 con camb de mano)", "Deyfron (Cross + 70)", "SUZIE Q 1", "SUZIE Q 2", "SUZIE Q 3", "SUZIE Q 4", "TRAVEL 1", "TRAVEL 2", "TRAVEL 3", 
- "MAMBO", "ATRÁS", "LATERAL", "NICO (Doble giro Follow + Gito Led en 5)", "Deyfron (Cross + Doble Giro Follow)"
+ "MAMBO", "ATRÁS", "LATERAL", "NICO (Doble giro Follow + Gito Led en 5)", "Deyfron (Cross + Doble Giro Follow)", "MAMBO 2",
 ];
 
 // Variables
