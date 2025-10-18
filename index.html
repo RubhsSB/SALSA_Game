@@ -1,34 +1,52 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SALSA Game</title>
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SB Game</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <!-- Cabecera principal -->
-  <header id="header">
-    <h1>SALSA Game</h1>
-  </header>
-
-  <!-- Botón R para acceder a resultados -->
-  <a href="resultados.html" id="results-button">
-    <button>R</button>
-  </a>
-
-  <!-- Contenido principal del juego -->
-  <div id="game">
-    <p id="word">Presiona "Play" para comenzar de nuevo.</p>
-    <p id="counter">Palabras jugadas: 0</p>
-    <p id="timer">Tiempo: 0 segundos</p>
-    <button id="play">Play</button>
-    <button id="next" disabled>Next</button>
-    <button id="finish" disabled>Finalizar</button>
-    <p id="result">No has jugado todavía.</p>
+  <!-- Botón para ver resultados -->
+  <div id="results-button">
+    <a href="resultados.html" title="Ver resultados">
+      <button>⏳</button>
+    </a>
   </div>
 
-  <!-- Conexión al script JavaScript -->
+  <!-- Botones de nivel -->
+  <div id="level-selection">
+    <button id="easy">E</button>
+    <button id="hard">H</button>
+    <button id="custom">C</button>
+    <button id="family">F</button>
+  </div>
+
+<!-- Selector de familia -->
+<div id="family-selector-container">
+  <select id="family-selector">
+    <!-- Las opciones se llenarán dinámicamente desde script.js -->
+  </select>
+</div>
+
+  <!-- Tarjeta principal del juego -->
+  <div class="card">
+    <div id="word">Presiona <strong>Play</strong> para comenzar</div>
+
+    <div class="info-row">
+      <div id="counter">Palabras: 0</div>
+      <div id="timer">Tiempo: 0.0s</div>
+    </div>
+
+    <div class="button-row">
+      <button id="play">▶ Play</button>
+      <button id="next" disabled>Siguiente</button>
+      <button id="finish" disabled>Finalizar</button>
+    </div>
+
+    <div id="result"></div>
+  </div>
+
   <script src="script.js"></script>
 </body>
 </html>
