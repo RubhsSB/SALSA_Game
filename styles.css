@@ -104,7 +104,7 @@ button:disabled {
   color: #ccc;
 }
 
-/* Botón de resultados */
+/* Botón de resultados (esquina superior izquierda) */
 #results-button {
   position: absolute;
   top: 15px;
@@ -133,57 +133,6 @@ button:disabled {
   color: #fff;
 }
 
-/* Selector de nivel (E, H, C, F) */
-#level-selection {
-  position: absolute;
-  top: 15px;
-  right: 15px;
-  display: flex;
-  gap: 10px;
-}
-
-#level-selection button {
-  background-color: transparent;
-  color: #fff;
-  border: 1px solid #777;
-  border-radius: 50%;
-  width: 36px;
-  height: 36px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.2s ease;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  line-height: 1;
-}
-
-#level-selection button.active {
-  background-color: #ff3b5c;
-  color: white;
-  border: none;
-}
-
-#level-selection button:hover {
-  background-color: #333;
-}
-
-/* Selector de familia */
-#family-selector-container {
-  margin-top: 20px;
-  display: none;
-}
-
-#family-selector {
-  font-size: 16px;
-  padding: 10px;
-  border-radius: 8px;
-  background-color: #222;
-  color: white;
-  border: 1px solid #555;
-}
-
 /* Responsividad: ajuste de texto para pantallas pequeñas */
 @media (max-width: 600px) {
   #word .main-text {
@@ -203,8 +152,7 @@ button:disabled {
     font-size: 14px;
   }
 
-  #results-button button,
-  #level-selection button {
+  #results-button button {
     width: 32px;
     height: 32px;
     font-size: 14px;
