@@ -2,8 +2,8 @@
 body {
   margin: 0;
   padding: 0;
-  background-color: #1f1f1f;
-  color: #eee;
+  background-color: #ffffff; /* FONDO BLANCO */
+  color: #222; /* Texto más oscuro para buen contraste */
   font-family: 'Segoe UI', sans-serif;
   height: 100vh;
   display: flex;
