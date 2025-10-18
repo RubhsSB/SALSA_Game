@@ -15,7 +15,7 @@ body {
 
 /* Tarjeta central */
 .card {
-  background-color: #111;
+  background-color: #f7f7f7;
   padding: 40px;
   border-radius: 15px;
   box-shadow: 0 0 30px rgba(255, 255, 255, 0.05);
@@ -38,6 +38,7 @@ body {
 #word .main-text {
   font-size: 72px;
   font-weight: 700;
+  color: #000;
   text-align: center;
   line-height: 1.1;
 }
@@ -47,6 +48,7 @@ body {
   font-size: 36px;
   font-weight: 400;
   opacity: 0.8;
+  color: #444;
   margin-top: 10px;
   text-align: center;
   line-height: 1.1;
@@ -60,12 +62,12 @@ body {
 }
 
 #counter {
-  color: #ff4c61;
+  color: #d97706;
   font-size: 18px;
 }
 
 #timer {
-  color: #a659ff;
+  color: #3b82f6;
   font-size: 18px;
 }
 
