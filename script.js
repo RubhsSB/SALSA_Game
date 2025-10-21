@@ -15,6 +15,7 @@ let startTime = 0;
 let totalTime = 0;
 let wordCount = 0;
 let timerInterval;
+let recentWords = [];
 
 const wordElement = document.getElementById("word");
 const playButton = document.getElementById("play");
@@ -28,7 +29,21 @@ const timerElement = document.getElementById("timer");
 // Funciones
 // =======================
 function getRandomWord() {
-  return words[Math.floor(Math.random() * words.length)];
+  let availableWords = words.filter(w => !recentWords.includes(w));
+
+  if (availableWords.length === 0) {
+    // Si ya usamos casi todas, reiniciamos la memoria
+    recentWords = [];
+    availableWords = [...words];
+  }
+
+  const word = availableWords[Math.floor(Math.random() * availableWords.length)];
+
+  // Guardamos en la lista de recientes (máximo 5)
+  recentWords.push(word);
+  if (recentWords.length > 5) recentWords.shift();
+
+  return word;
 }
 
 function formatWordDisplay(word) {
