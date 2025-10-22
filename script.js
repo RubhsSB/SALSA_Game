@@ -2,9 +2,9 @@
 // Lista de palabras
 // =======================
 const words = [
-  "NICO (Led giro atrás en 5)", "NICO (Led giro en 1 con camb de mano)", "SUZIE Q 1", "SUZIE Q 2", "SUZIE Q 3", "SUZIE Q 4", "TRAVEL 1", "MAMBO", "ATRÁS", "LATERAL", "NICO (Doble giro Fol + Gito Led en 5)", "NICO (Rompe giro Foll con brazo)", 
+  "NICO (Led giro atrás en 5)", "NICO (Led giro en 1 con camb de mano)", "SUZIE Q 1", "SUZIE Q 2", "SUZIE Q 3", "SUZIE Q 4", "TRAVEL 1", "MAMBO", "ATRÁS", "LATERAL", "NICO (Doble giro Fol + Giro Led en 5)", "NICO (Rompe giro Foll con brazo)", 
   "Deyfron (Cross + Doble Giro Fol)", "MAMBO 2", "NICO (Led Frame giro FOL en 5 con mano IZQ)", "NICO (Led Frame giro FOL en 5 con mano DCH)", "NICO (Led preparo giro Fol en 5 + Giro led en 6)", 
-  "NICO (Led tiro mano IZQ en 1 atrás Fol y me pongo a su Izq)", "GIRA Fol en 5 + Gira Lead en 1)", "Deyfron (Cross 2 manos + sombra + Lid gira por delante)", "NICO (Led firo en 1 + lanzo en 5 + pongo lado Derch Foll)",
+  "NICO (Led tiro mano IZQ en 1 atrás Fol y me pongo a su Izq)", "GIRA Fol en 5 + Gira Lead en 1)", "Deyfron (Cross 2 manos + sombra + Lid gira por delante)", "NICO (Led giro en 1 + lanzo en 5 + pongo lado Derch Foll)",
 ];
 
 // =======================
