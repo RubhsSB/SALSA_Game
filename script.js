@@ -6,7 +6,7 @@ const words = [
   "NICO (Led Frame giro FOL en 5 con mano IZQ)", "NICO (Led Frame giro FOL en 5 con mano DCH - mano abajo)", "NICO (Led preparo giro Fol en 5 + Giro led en 6)", "NICO (Led tiro mano IZQ en 1 atrás Fol y me pongo a su Izq)", "GIRA Fol en 5 + Gira Lead en 1)", 
   "Deyfron (Cross 2 manos + sombra + Lid gira por delante)", "NICO (Led giro en 1 + lanzo en 5 + pongo lado Derch Foll)", "Billy Roy Cross + Rompe", "Billy Roy Cross + Sombra Led", "Cross SuperX", "Excalibur", "NICO (Cross con Giro)", 
   "NICO (Led Frame giro FOL en 5 con mano DCH - giro yo mano cintura)", "Escucha la música", "Escucha la música", "Escucha la música", "Escucha la música", "Illusion", "Illusion", 
-  "NICO (Giro Follow en 5 + Giro Leader cambiando de mano y Piso Pico Piso Pico + Giro Follo y Piso Pico Piso Pico)", "70´", "NICO (Abro para 360º)"
+  "NICO (Giro Follow en 5 + Giro Leader cambiando de mano y Piso Pico Piso Pico + Giro Follo y Piso Pico Piso Pico)", "70´", "NICO (Abro para 360º)", "NICO (Cross con Giro + Giro Led + Giro Follow y Led)"
 ];
 
 // =======================
